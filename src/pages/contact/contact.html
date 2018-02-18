@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      View
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let bucket of buckets" (click)="loadFiles(bucket)">
+
+    <ion-card-header>
+      {{bucket.split(';')[1]}}
+    </ion-card-header>
+
+  </ion-card>
+</ion-content>
